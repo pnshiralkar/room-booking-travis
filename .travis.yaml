@@ -1,0 +1,24 @@
+language: python
+
+python:
+  - 3.7
+
+services:
+  - docker
+  
+install:
+  - cd src
+  - pip install -r requirements.txt
+
+before_script:
+  - python3 --version
+  - docker --version
+  
+script:
+  - python3 manage.py test
+  - docker build . -t pnshiralkar/fossee
+
+after_success:
+  - echo "$DOCKER_PWD" | docker login -u "$DOCKER_UN" --password-stdin
+  - docker push pnshiralkar/fossee
+
