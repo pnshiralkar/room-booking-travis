@@ -15,7 +15,7 @@ before_script:
   - docker --version
   
 script:
-  - python3 manage.py test
+  - python3 manage.py test # Run tests
   - docker build . -t pnshiralkar/fossee
 
 after_success:
