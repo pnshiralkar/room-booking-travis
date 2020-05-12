@@ -1,5 +1,7 @@
 # Room Slot Booking Project
 <br>
+[![Build Status](https://travis-ci.com/pnshiralkar/room-booking-travis.svg?branch=master)](https://travis-ci.com/pnshiralkar/room-booking-travis)
+<br>
 
 ## FOSSEE details :
 

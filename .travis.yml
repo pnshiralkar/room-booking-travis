@@ -16,6 +16,7 @@ before_script:
   
 script:
   - python3 manage.py test # Run tests
+  - cd ..
   - docker build . -t pnshiralkar/fossee
 
 after_success:
