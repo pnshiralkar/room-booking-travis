@@ -5,7 +5,7 @@ name: Python Install-Test and Docker CI/CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, '**' ]
   pull_request:
     branches: [ master ]
 
@@ -38,4 +38,3 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
           image-name: room-slot-booking # Provide only Docker image name, tag will be automatically set to latest
           dockerfile: Dockerfile
-          master
