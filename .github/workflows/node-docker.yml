@@ -3,11 +3,7 @@
 
 name: Python Install-Test and Docker CI/CD
 
-on:
-  push:
-    branches: [ master, github-actions]
-  pull_request:
-    branches: [ master ]
+on: push
 
 jobs:
   lint:
