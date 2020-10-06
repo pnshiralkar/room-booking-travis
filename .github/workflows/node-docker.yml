@@ -5,7 +5,8 @@ name: Python Install-Test and Docker CI/CD
 
 on:
   push:
-    branches: [ '**' ]
+    branches-ignore: 
+        - no-gh-actions
   pull_request:
     branches: [ master ]
 
